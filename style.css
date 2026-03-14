@@ -139,11 +139,11 @@ a:hover {
     .stats-container {
         flex-direction: column;
         gap: 15px;
+        margin-top: 20px;
     }
 
     .stats-card {
         width: 90%;
-        margin: 0 auto;
     }
 
     .header {
