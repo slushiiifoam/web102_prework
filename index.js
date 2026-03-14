@@ -185,3 +185,24 @@ firstGameContainer.appendChild(firstGameElement);
 const secondGameElement = document.createElement("p");
 secondGameElement.textContent = secondGame.name;
 secondGameContainer.appendChild(secondGameElement);
+
+/*
+Add a search bar to the "Our Games" section that allows users to search for games by name. 
+As the user types, the list of games should update in real time to show only the games that include the search string.
+*/
+// Grab the search input element
+const gameSearch = document.getElementById("game-search");
+
+// Add an event listener for user typing
+gameSearch.addEventListener("input", (e) => {
+    const searchString = e.target.value.toLowerCase();
+
+    // Filter games based on name including the search string
+    const filteredGames = GAMES_JSON.filter((game) => {
+        return game.name.toLowerCase().includes(searchString);
+    });
+
+    // Re-render the page with filtered games
+    deleteChildElements(gamesContainer);
+    addGamesToPage(filteredGames);
+});
