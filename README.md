@@ -40,6 +40,7 @@ https://github.com/user-attachments/assets/66a68166-1686-4879-991c-5d4ee3222d08
 
 <!-- Replace this with whatever GIF tool you used! -->
 Video created with [Loom](https://www.loom.com/) for macOS
+(If video is not loading then you can download the mp4 file I included to view it)
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
